@@ -1,0 +1,31 @@
+.inicio {
+  display: grid;
+  gap: 0.75rem;
+  justify-items: start;
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 1.5rem 0;
+}
+
+.titulo {
+  margin: 0;
+}
+
+.texto {
+  margin: 0;
+}
+
+.etiqueta {
+  margin: 0;
+  font-family: var(--sazon-fuente-etiquetas);
+  font-size: 0.85rem;
+}
+
+.boton {
+  padding: 0.7rem 1.1rem;
+  background-color: var(--sazon-acento);
+  color: var(--sazon-fondo);
+  border: none;
+  border-radius: var(--sazon-radio);
+  font-weight: 600;
+}

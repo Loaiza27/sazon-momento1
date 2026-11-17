@@ -1,0 +1,79 @@
+/* ===== Kit de marca Sazón: paleta base ===== */
+:root {
+  --sazon-verde-hoja: #3f7d32;
+  --sazon-verde-nutresa: #0b4a36;
+  --sazon-cacao: #3e2a1f;
+  --sazon-marfil: #faf6e9;
+
+  /* Tipografías */
+  --sazon-fuente-titulos: 'Poppins', sans-serif;
+  --sazon-fuente-cuerpo: 'Inter', sans-serif;
+  --sazon-fuente-etiquetas: 'IBM Plex Mono', monospace;
+
+  /* Barra lateral: verde hoja en ambos modos */
+  --sazon-sidebar-fondo: var(--sazon-verde-hoja);
+  --sazon-sidebar-texto: var(--sazon-marfil);
+
+  /* Espaciado y forma */
+  --sazon-radio: 8px;
+  --sazon-sombra: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* ===== Modo día (por defecto): fondo marfil ===== */
+:root,
+[data-theme='dia'] {
+  --sazon-fondo: var(--sazon-marfil);
+  --sazon-texto: var(--sazon-cacao);
+  --sazon-superficie: #ffffff;
+  --sazon-borde: rgba(62, 42, 31, 0.2);
+  --sazon-texto-tachado: rgba(62, 42, 31, 0.55);
+  --sazon-acento: var(--sazon-verde-hoja);
+
+  --sazon-footer-fondo: var(--sazon-cacao);
+  --sazon-footer-texto: var(--sazon-marfil);
+}
+
+/* ===== Modo noche: fondo verde Nutresa ===== */
+[data-theme='noche'] {
+  --sazon-fondo: var(--sazon-verde-nutresa);
+  --sazon-texto: var(--sazon-marfil);
+  --sazon-superficie: rgba(250, 246, 233, 0.08);
+  --sazon-borde: rgba(250, 246, 233, 0.25);
+  --sazon-texto-tachado: rgba(250, 246, 233, 0.55);
+  --sazon-acento: #9ad483;
+
+  --sazon-footer-fondo: var(--sazon-marfil);
+  --sazon-footer-texto: var(--sazon-cacao);
+}
+
+/* ===== Base global ===== */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background-color: var(--sazon-fondo);
+  color: var(--sazon-texto);
+  font-family: var(--sazon-fuente-cuerpo);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--sazon-fuente-titulos);
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+}
+
+:focus-visible {
+  outline: 2px solid var(--sazon-acento);
+  outline-offset: 2px;
+}
