@@ -1,0 +1,25 @@
+.lista {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 1.5rem 1rem;
+}
+
+.titulo {
+  margin: 0 0 0.25rem;
+  color: var(--sazon-texto);
+}
+
+.contador {
+  margin: 0 0 1rem;
+  font-family: var(--sazon-fuente-etiquetas);
+  font-size: 0.85rem;
+  color: var(--sazon-texto);
+}
+
+.items {
+  display: grid;
+  gap: 0.5rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
