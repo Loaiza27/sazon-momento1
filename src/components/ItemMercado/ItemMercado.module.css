@@ -1,0 +1,35 @@
+.item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.75rem 1rem;
+  background-color: var(--sazon-superficie);
+  border: 1px solid var(--sazon-borde);
+  border-radius: var(--sazon-radio);
+  transition: opacity 0.2s ease;
+}
+
+.checkbox {
+  flex-shrink: 0;
+  width: 1.25rem;
+  height: 1.25rem;
+  accent-color: var(--sazon-acento);
+  cursor: pointer;
+}
+
+.etiqueta {
+  flex: 1;
+  font-family: var(--sazon-fuente-cuerpo);
+  color: var(--sazon-texto);
+  cursor: pointer;
+}
+
+/* Clases prefijadas de la HU: se mantienen globales para conservar su nombre exacto */
+:global(.planificador-item-comprado) {
+  opacity: 0.8;
+}
+
+:global(.planificador-item-tachado) {
+  text-decoration: line-through;
+  color: var(--sazon-texto-tachado);
+}

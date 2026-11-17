@@ -1,0 +1,63 @@
+.tarjeta {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  padding: 1rem;
+  background-color: var(--sazon-superficie);
+  color: var(--sazon-texto);
+  border: 1px solid var(--sazon-borde);
+  border-radius: var(--sazon-radio);
+  box-shadow: var(--sazon-sombra);
+}
+
+.imagen {
+  display: grid;
+  place-items: center;
+  height: 110px;
+  margin-bottom: 0.5rem;
+  background-color: var(--sazon-verde-hoja);
+  color: var(--sazon-marfil);
+  border-radius: var(--sazon-radio);
+  font-family: var(--sazon-fuente-titulos);
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.categoria {
+  font-family: var(--sazon-fuente-etiquetas);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.nombre {
+  margin: 0;
+  font-size: 1.05rem;
+}
+
+.presentacion {
+  margin: 0;
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+
+.precio {
+  margin: 0.25rem 0 0.5rem;
+  font-family: var(--sazon-fuente-etiquetas);
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.boton {
+  margin-top: auto;
+  padding: 0.6rem 0.9rem;
+  background-color: var(--sazon-acento);
+  color: var(--sazon-fondo);
+  border: none;
+  border-radius: var(--sazon-radio);
+  font-weight: 600;
+}
+
+.boton:hover {
+  filter: brightness(1.1);
+}
