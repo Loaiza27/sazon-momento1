@@ -1,10 +1,7 @@
-import { useListaMercado } from '../../hooks/useListaMercado'
 import ItemMercado from '../ItemMercado/ItemMercado'
 import styles from './ListaMercado.module.css'
 
-function ListaMercado() {
-  const { items, alternarComprado, totalComprados } = useListaMercado()
-
+function ListaMercado({ items, totalComprados, onAlternar }) {
   return (
     <section className={styles.lista} aria-labelledby="titulo-lista-mercado">
       <h2 id="titulo-lista-mercado" className={styles.titulo}>
@@ -15,7 +12,7 @@ function ListaMercado() {
       </p>
       <ul className={styles.items}>
         {items.map((item) => (
-          <ItemMercado key={item.id} item={item} onAlternar={alternarComprado} />
+          <ItemMercado key={item.id} item={item} onAlternar={onAlternar} />
         ))}
       </ul>
     </section>
